@@ -23,7 +23,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
                     str_cursorChar = '♫';
-      S.UI.simulate('|#countdown 3||某|某|某|新|年|快|乐|呀|！|还有哦|🎵|#countdown 3|');
+      S.UI.simulate('|#countdown 3||某某某|新年快|乐|呀|！|还有哦|wait|#countdown 3|');
     }
 
     S.Drawing.loop(function () {
@@ -43,7 +43,7 @@ S.Drawing = (function () {
                      window.oRequestAnimationFrame      ||
                      window.msRequestAnimationFrame     ||
                      function(callback) {
-                       window.setTimeout(callback, 1000 / 65);
+                       window.setTimeout(callback, 1200 / 60);
                      };
 
   return {
