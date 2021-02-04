@@ -43,7 +43,7 @@ S.Drawing = (function () {
                      window.oRequestAnimationFrame      ||
                      window.msRequestAnimationFrame     ||
                      function(callback) {
-                       window.setTimeout(callback, 1200 / 60);
+                       window.setTimeout(callback, 1500 / 60);
                      };
 
   return {
