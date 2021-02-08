@@ -23,7 +23,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
                     str_cursorChar = '♫';
-      S.UI.simulate('|#countdown 3||某某某|新年快|乐|呀|！|还有哦|wait|#countdown 3|');
+      S.UI.simulate('|#countdown 3||某某某|新年|快乐呀|！|还有哦|wait|#countdown 3|');
     }
 
     S.Drawing.loop(function () {
